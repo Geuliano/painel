@@ -1,0 +1,44 @@
+/* Ajustes de alto contraste para o tema claro */
+html[data-bs-theme=light] {
+  --bs-body-bg: #f3f6fb;
+  --bs-card-bg: #ffffff;
+  --bs-heading-color: #0f172a;
+  --bs-body-color: #1f2937;
+  --bs-secondary-color: #4b5568;
+  --bs-text-muted: #4b5568;
+  --bs-secondary-bg: #eef2f7;
+  --bs-border-color: #cdd5e3;
+  --bs-border-secondary: #9aa6bf;
+  --bs-topbar-bg: #ffffff;
+  --bs-topbar-b-border-color: #d7deea;
+  --bs-topbar-nav-icon-bg: #eef1f7;
+  --bs-topbar-nav-icon-color: #1f2937;
+  --bs-startbar-bg: #f6f8fc;
+  --bs-startbar-e-border-color: #d7deea;
+  --bs-menu-icon-color: #4c5a76;
+  --bs-menu-link-color: #1e2a3f;
+  --bs-menu-link-hover-color: #0f172a;
+  --bs-menu-link-active-bg-color: #e4ecf9;
+  --bs-menu-label-color: #5b6784;
+  --bs-nav-link-disc-color: #1f4c9c;
+  --bs-table-head-bg: #eef2fb;
+  --bs-link-color: #1d4ed8;
+  --bs-link-hover-color: #163fa3;
+}
+
+html[data-bs-theme=light] .card {
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+  background-color: #ffffff;
+}
+
+html[data-bs-theme=light] .table thead th {
+  color: #0f172a;
+}
+
+html[data-bs-theme=light] .text-muted {
+  color: #4b5568 !important;
+}
+
+html[data-bs-theme=light] .topbar .topbar-custom .nav-link.nav-icon {
+  color: #1f2937;
+}

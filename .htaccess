@@ -1,0 +1,20 @@
+# === Painel - front controller em /public/index.php ===
+RewriteEngine On
+
+# 1) Se a URL for exatamente a raiz deste diretório, manda para public/index.php
+RewriteRule ^$ public/index.php [L]
+
+# 2) Se o arquivo ou diretório físico existir (CSS/JS/IMG etc.), entrega direto
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^ - [L]
+
+# 3) Qualquer outra URL lógica é enviada para o front controller
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ public/index.php [L,QSA]
+
+# Evita listagem de diretórios
+Options -Indexes
+
+# Index padrão
+DirectoryIndex public/index.php
